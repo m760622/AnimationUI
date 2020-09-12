@@ -11,6 +11,10 @@
 		4FE8B4CA250CBD2400F798DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE8B4C9250CBD2400F798DB /* ContentView.swift */; };
 		4FE8B4CC250CBD2500F798DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE8B4CB250CBD2500F798DB /* Assets.xcassets */; };
 		4FE8B4CF250CBD2500F798DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE8B4CE250CBD2500F798DB /* Preview Assets.xcassets */; };
+		4FE8B4D7250CBF5700F798DB /* AnimationTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE8B4D6250CBF5700F798DB /* AnimationTypesView.swift */; };
+		4FE8B4DA250CC32600F798DB /* other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE8B4D9250CC32600F798DB /* other.swift */; };
+		4FE8B4DC250CC67D00F798DB /* TypsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE8B4DB250CC67D00F798DB /* TypsView.swift */; };
+		4FE8B4DE250CD52700F798DB /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE8B4DD250CD52700F798DB /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		4FE8B4CB250CBD2500F798DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE8B4CE250CBD2500F798DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4FE8B4D0250CBD2500F798DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FE8B4D6250CBF5700F798DB /* AnimationTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTypesView.swift; sourceTree = "<group>"; };
+		4FE8B4D9250CC32600F798DB /* other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = other.swift; sourceTree = "<group>"; };
+		4FE8B4DB250CC67D00F798DB /* TypsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypsView.swift; sourceTree = "<group>"; };
+		4FE8B4DD250CD52700F798DB /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,7 @@
 		4FE8B4C6250CBD2400F798DB /* AnimationUI */ = {
 			isa = PBXGroup;
 			children = (
-				4FE8B4C7250CBD2400F798DB /* AnimationUIApp.swift */,
-				4FE8B4C9250CBD2400F798DB /* ContentView.swift */,
+				4FE8B4D8250CBF6A00F798DB /* Views */,
 				4FE8B4CB250CBD2500F798DB /* Assets.xcassets */,
 				4FE8B4D0250CBD2500F798DB /* Info.plist */,
 				4FE8B4CD250CBD2500F798DB /* Preview Content */,
@@ -67,6 +74,19 @@
 				4FE8B4CE250CBD2500F798DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FE8B4D8250CBF6A00F798DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FE8B4C7250CBD2400F798DB /* AnimationUIApp.swift */,
+				4FE8B4C9250CBD2400F798DB /* ContentView.swift */,
+				4FE8B4D6250CBF5700F798DB /* AnimationTypesView.swift */,
+				4FE8B4DD250CD52700F798DB /* CircleView.swift */,
+				4FE8B4DB250CC67D00F798DB /* TypsView.swift */,
+				4FE8B4D9250CC32600F798DB /* other.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE8B4DE250CD52700F798DB /* CircleView.swift in Sources */,
+				4FE8B4DA250CC32600F798DB /* other.swift in Sources */,
 				4FE8B4CA250CBD2400F798DB /* ContentView.swift in Sources */,
 				4FE8B4C8250CBD2400F798DB /* AnimationUIApp.swift in Sources */,
+				4FE8B4DC250CC67D00F798DB /* TypsView.swift in Sources */,
+				4FE8B4D7250CBF5700F798DB /* AnimationTypesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20200912;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimationUI/Preview Content\"";
 				DEVELOPMENT_TEAM = N77986V24E;
 				ENABLE_PREVIEWS = YES;
@@ -277,6 +302,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.001;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nmds.AnimationUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -290,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20200912;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimationUI/Preview Content\"";
 				DEVELOPMENT_TEAM = N77986V24E;
 				ENABLE_PREVIEWS = YES;
@@ -299,6 +326,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.001;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nmds.AnimationUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
