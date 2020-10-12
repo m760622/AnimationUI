@@ -1,4 +1,4 @@
-// https://github.com/m760622/AnimationUI/blob/main/AnimationUI/Views/StrokeView.swift
+// https://github.com/m760622/AnimationUI/blob/main/AnimationUI/Views/CircularHalvView.swift
 //  CircularHalvView.swift
 //  AnimationUI
 // m7606225@gmail.com
@@ -25,7 +25,7 @@ struct CircularHalvInView: View {
             RadialGradient(gradient: Gradient(colors: [Color.green, Color.black]), center: .center, startRadius: 50, endRadius: 120)
             Circle()
                 .trim(from: 4/7, to: 1)
-                .stroke(style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
+                .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                 .frame(width: 220, height: 220)
                 .foregroundColor(.white)
                 .rotationEffect(.degrees(rotatePath ? 200 : 160))
@@ -35,9 +35,9 @@ struct CircularHalvInView: View {
                 }
             
             Circle()
-                .frame(width: 20, height: 20)
+                .frame(width: 30, height: 30)
                 .foregroundColor(.white)
-                .offset(x: 86, y: -50)
+                .offset(x: 86, y: -10)
                 .rotationEffect(.degrees(moveOnPath ? 260: -10))
                 .rotation3DEffect(.degrees(0), axis: (x: 90, y: 0, z: 0))
                 .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true))
